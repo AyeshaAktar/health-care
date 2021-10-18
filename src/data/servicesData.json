@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "img": "https://www.jacksondavenport.com/wp-content/uploads/2019/02/eye-infections-summerville-sc.jpg",
+    "name": "Eye Infection Care",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus porro odit nemo unde ut quaerat dignissimos labore eaque, deleniti laboriosam nulla placeat maxime libero reprehenderit ad saepe error a dicta!"
+  },
+  {
+    "id": 2,
+    "img": "https://i.pinimg.com/originals/97/1d/8e/971d8ecbc8784ec5f5d588a0907b01e2.jpg",
+    "name": "Dry Eye Treatment",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus porro odit nemo unde ut quaerat dignissimos labore eaque, deleniti laboriosam nulla placeat maxime libero reprehenderit ad saepe error a dicta!"
+  },
+  {
+    "id": 3,
+    "img": "https://insighteh.com/wp-content/uploads/2018/12/eye_transplantation.jpg",
+    "name": "Cornea Transplant",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus porro odit nemo unde ut quaerat dignissimos labore eaque, deleniti laboriosam nulla placeat maxime libero reprehenderit ad saepe error a dicta!"
+  },
+  {
+    "id": 4,
+    "img": "https://www.armadale-eye.com.au/wp-content/uploads/2020/12/retinal-treament.jpg",
+    "name": "Retina Repair",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus porro odit nemo unde ut quaerat dignissimos labore eaque, deleniti laboriosam nulla placeat maxime libero reprehenderit ad saepe error a dicta!"
+  },
+  {
+    "id": 5,
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNNunua1NuYXZzorACzJdAH1sUcI-kWRfkow&usqp=CAU",
+    "name": "Glaucoma Screening",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus porro odit nemo unde ut quaerat dignissimos labore eaque, deleniti laboriosam nulla placeat maxime libero reprehenderit ad saepe error a dicta!"
+  },
+  {
+    "id": 6,
+    "img": "https://www.aao.org/image.axd?id=ff7196f4-5047-4f7f-ad84-f954e1457b09&t=636935950911500000",
+    "name": "Contact Lens Care",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus porro odit nemo unde ut quaerat dignissimos labore eaque, deleniti laboriosam nulla placeat maxime libero reprehenderit ad saepe error a dicta!"
+  },
+  {
+    "id": 7,
+    "img": "https://www.spanisheyeclinic.com/wp-content/uploads/2018/07/lasik-in-dubai.jpg",
+    "name": "Lasik Care",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus porro odit nemo unde ut quaerat dignissimos labore eaque, deleniti laboriosam nulla placeat maxime libero reprehenderit ad saepe error a dicta!"
+  },
+  {
+    "id": 8,
+    "img": "https://www.eyeqindia.com/wp-content/uploads/2020/11/Eyecare-in-times-of-COVID.jpg",
+    "name": "Vision Care",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus porro odit nemo unde ut quaerat dignissimos labore eaque, deleniti laboriosam nulla placeat maxime libero reprehenderit ad saepe error a dicta!"
+  }
+]
