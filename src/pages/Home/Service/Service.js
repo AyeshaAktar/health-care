@@ -1,18 +1,21 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Service.css";
 
 const Service = (props) => {
-  const { name, img, description } = props.service;
+  const { id, name, img, description } = props.service;
   return (
-    <div class="col-md-6">
-      <div class="card m-3">
-        <img src={img} class="card-img-top service-img" alt="..." />
-        <div class="card-body text-start">
-          <h5 class="card-title">{name}</h5>
-          <p class="card-text">{description}</p>
-          <button type="button" class="btn btn-warning">
-            Details
-          </button>
+    <div className="col-md-6">
+      <div className="card m-3">
+        <img src={img} className="card-img-top service-img" alt="..." />
+        <div className="card-body text-start">
+          <h5 className="card-title">{name}</h5>
+          <p className="card-text">{description}</p>
+          <Link to={`/serviceDetail/${id}`}>
+            <button type="button" className="btn btn-warning">
+              Details
+            </button>
+          </Link>
         </div>
       </div>
     </div>

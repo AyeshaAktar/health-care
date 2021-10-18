@@ -9,6 +9,8 @@ import NotFound from "./pages/NotFound/NotFound";
 import About from "./pages/About/About";
 import Blog from "./pages/Blog/Blog";
 import SignIn from "./pages/Login/SignIn/SignIn";
+import SignUp from "./pages/Login/SignUp/SignUp";
+import ServiceDetails from "./pages/ServiceDetails/ServiceDetails";
 
 function App() {
   return (
@@ -30,6 +32,12 @@ function App() {
           </Route>
           <Route path="/login">
             <SignIn></SignIn>
+          </Route>
+          <Route path="/signup">
+            <SignUp></SignUp>
+          </Route>
+          <Route path="/serviceDetail/:id">
+            <ServiceDetails></ServiceDetails>
           </Route>
           <Route path="*">
             <NotFound></NotFound>
