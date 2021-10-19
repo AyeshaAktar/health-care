@@ -13,9 +13,13 @@ const ServiceDetails = () => {
     (service) => parseInt(service.id) === parseInt(id)
   );
   console.log(singleData);
+
   return (
     <div>
       <h1>Service Details</h1>
+      <img src={singleData?.img} alt="" />
+      <h2>name:{singleData?.name}</h2>
+      <p>{singleData?.description}</p>
     </div>
   );
 };

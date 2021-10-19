@@ -12,26 +12,27 @@ const SignUp = () => {
     email: "",
     password: "",
   });
+  const [success, setSuccess] = useState("");
+  const [errorMsg, setErrorMsg] = useState("");
   const getInputValue = (e) => {
     const getValue = { ...user };
     getValue[e.target.name] = e.target.value;
     setUser(getValue);
   };
 
-  const handleSignIn = (e) => {
+  const handleSignUp = (e) => {
     if (user.name !== "" && user.email !== "" && user.password !== "") {
       const auth = getAuth();
       createUserWithEmailAndPassword(auth, user.email, user.password)
         .then((userCredential) => {
-          // Signed in
           const user = userCredential.user;
-          console.log(user);
-          // ...
+          setSuccess("Signup success");
+          setErrorMsg("");
         })
         .catch((error) => {
-          const errorCode = error.code;
           const errorMessage = error.message;
-          // ..
+          setErrorMsg(errorMessage);
+          setSuccess("");
         });
     }
     e.preventDefault();
@@ -39,7 +40,9 @@ const SignUp = () => {
   return (
     <div className="my-5 container">
       <h2 className="mb-4">SignUp Page</h2>
-      <form onSubmit={handleSignIn}>
+      <p>{success}</p>
+      <p>{errorMsg}</p>
+      <form onSubmit={handleSignUp}>
         <div className="row mb-3">
           <div className="col-12 mb-2 d-flex justify-content-center">
             <input

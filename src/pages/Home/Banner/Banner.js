@@ -38,7 +38,7 @@ const Banner = () => {
           <div className="carousel-item active">
             <img src={banner1} class="d-block w-100 banner-img" alt="..." />
             <div className="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
+              <h2>We Only Give Best Care To Your Eyes</h2>
               <p>
                 Some representative placeholder content for the first slide.
               </p>
@@ -47,7 +47,7 @@ const Banner = () => {
           <div className="carousel-item">
             <img src={banner2} class="d-block w-100 banner-img" alt="..." />
             <div className="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
+              <h2>Eye Care Specialist Services That You Can Trust</h2>
               <p>
                 Some representative placeholder content for the second slide.
               </p>
@@ -56,7 +56,7 @@ const Banner = () => {
           <div className="carousel-item">
             <img src={banner3} class="d-block w-100 banner-img" alt="..." />
             <div className="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
+              <h2>Optometrist and Eye Care Services</h2>
               <p>
                 Some representative placeholder content for the third slide.
               </p>

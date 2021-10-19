@@ -10,7 +10,7 @@ const Service = (props) => {
         <img src={img} className="card-img-top service-img" alt="..." />
         <div className="card-body text-start">
           <h5 className="card-title">{name}</h5>
-          <p className="card-text">{description}</p>
+          <p className="card-text">{description.slice(0, 150)}...</p>
           <Link to={`/serviceDetail/${id}`}>
             <button type="button" className="btn btn-warning">
               Details

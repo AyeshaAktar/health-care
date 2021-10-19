@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { Link } from "react-router-dom";
 import initializeAuthentaction from "../Firebase/firebase.init";
 import GoogleLogin from "../GoogleLogin/GoogleLogin";
+import { AuthContext } from "../../../context/AuthProvider";
+import { useHistory, useLocation } from "react-router";
 
 initializeAuthentaction();
 
@@ -11,6 +13,12 @@ const SignIn = () => {
     email: "",
     password: "",
   });
+  const [success, setSuccess] = useState("");
+  const [errorMsg, setErrorMsg] = useState("");
+  const [loginUser, setLoginUser] = useContext(AuthContext);
+  const history = useHistory();
+  const location = useLocation();
+  let { from } = location.state || { from: { pathname: "/" } };
   const getInputValue = (e) => {
     const getValue = { ...user };
     getValue[e.target.name] = e.target.value;
@@ -22,14 +30,16 @@ const SignIn = () => {
       const auth = getAuth();
       signInWithEmailAndPassword(auth, user.email, user.password)
         .then((userCredential) => {
-          // Signed in
           const user = userCredential.user;
-          console.log("login success");
+          setLoginUser(user);
+          history.replace(from);
+          setSuccess("SignIn success");
+          setErrorMsg("");
         })
         .catch((error) => {
-          const errorCode = error.code;
           const errorMessage = error.message;
-          console.log(errorMessage);
+          setErrorMsg(errorMessage);
+          setSuccess("");
         });
     }
     e.preventDefault();
@@ -37,6 +47,8 @@ const SignIn = () => {
   return (
     <div className="my-5 container">
       <h2 className="mb-4">Sign In Page</h2>
+      <p>{success}</p>
+      <p>{errorMsg}</p>
       <form onSubmit={handleSignIn}>
         <div className="row mb-3">
           <div className="col-12 mb-2 d-flex justify-content-center">

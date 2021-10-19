@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { AuthContext } from "../../../context/AuthProvider";
+import { useHistory, useLocation } from "react-router";
 
 const GoogleLogin = () => {
+  const [loginUser, setLoginUser] = useContext(AuthContext);
+  const history = useHistory();
+  const location = useLocation();
+  let { from } = location.state || { from: { pathname: "/" } };
   const googleProvider = new GoogleAuthProvider();
 
   const handleGoogleSignin = () => {
@@ -9,8 +15,8 @@ const GoogleLogin = () => {
     signInWithPopup(auth, googleProvider)
       .then((result) => {
         const user = result.user;
-        console.log("login success", user.displayName, user.email);
-        // ...
+        setLoginUser(user);
+        history.replace(from);
       })
       .catch((error) => {
         // Handle Errors here.
