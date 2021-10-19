@@ -5,9 +5,9 @@ import { IoIosCall } from "react-icons/io";
 
 const Contact = () => {
   return (
-    <div className="mt-5">
+    <div className="container p-3 mt-5">
       <h2>Contact with us</h2>
-      <div className="row mt-5 mx-0 p-0">
+      <div className="row mt-5 mx-0 p-2 bg-white">
         <div className="col-md-4 border-sm-0 border-end">
           <div>
             <h4>Address</h4>

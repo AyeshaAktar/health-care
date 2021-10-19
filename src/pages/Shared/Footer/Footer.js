@@ -7,7 +7,7 @@ import { BsYoutube } from "react-icons/bs";
 const Footer = () => {
   return (
     <div>
-      <div className="footer mt-5 py-2">
+      <div className="footer py-2">
         <div className="d-flex justify-content-around ">
           <div>
             <h5 className="mx-2">Contact</h5>

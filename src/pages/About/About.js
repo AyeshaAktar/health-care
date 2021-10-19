@@ -7,27 +7,29 @@ import doctor3 from "../../image/doctors/3.jpg";
 const About = () => {
   return (
     <div className="about">
-      <div className="container">
-        <div className="p-5">
+      <div className="container pt-5">
+        <div className="p-3 ">
           <h1>About Us</h1>
-          <h3 className="mt-5">
-            Best Optometrist in town are ready to help you!
-          </h3>
-          <p className="mt-5 text-secondary">
-            At Optic Eye-Care Hospital we have best optometrist in town who are
-            ready to give you great consultation and advices to get rid of
-            glasses or get new lense of glasses suggestion. Dont delay contact
-            us today so we cna provide you best features.
-          </p>
-          <div className="d-flex justify-content-center">
-            <h6>We Provigung You: </h6>
-            <div>
-              <p> Qualified Doctors</p>
-              <p> Surgery Specilist</p>
-              <p> 24/7 services</p>
+          <div className="bg-white p-3 mt-5">
+            <h3 className="mt-5">
+              Best Optometrist in town are ready to help you!
+            </h3>
+            <p className="mt-5 text-secondary">
+              At Optic Eye-Care Hospital we have best optometrist in town who
+              are ready to give you great consultation and advices to get rid of
+              glasses or get new lense of glasses suggestion. Dont delay contact
+              us today so we cna provide you best features.
+            </p>
+            <div className="d-flex justify-content-center">
+              <h6>We Provigung You: </h6>
+              <div>
+                <p> Qualified Doctors</p>
+                <p> Surgery Specilist</p>
+                <p> 24/7 services</p>
+              </div>
             </div>
+            <h6 className="mb-5">We Are Caring For Your Eye Health</h6>
           </div>
-          <h6 className="mb-5">We Are Caring For Your Eye Health</h6>
         </div>
 
         <div className="m-5">

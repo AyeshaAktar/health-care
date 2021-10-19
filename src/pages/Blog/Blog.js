@@ -1,5 +1,6 @@
 import React from "react";
 import "./Blog.css";
+import blogImg from "../../image/blog.jpg";
 
 const Blog = () => {
   return (
@@ -7,17 +8,27 @@ const Blog = () => {
       <div className="">
         <h2>Welcome To Optic Eye-Care</h2>
 
-        <h4>Why eye care!!</h4>
-        <p>
-          Your eyes are an important part of your health. Most people rely on
-          their eyes to see and make sense of the world around them. But some
-          eye diseases can lead to vision loss, so it is important to identify
-          and treat eye diseases as early as possible. You should get your eyes
-          checked as often as your health care provider recommends it, or if you
-          have any new vision problems. And just as it is important to keep your
-          body healthy, you also need to keep your eyes healthy.
-        </p>
-        <div className="container text-start bg-white p-5 m-5">
+        <div className=" container mt-5">
+          <div className="row bg-white">
+            <div className="col-md-4 p-3">
+              <img className="blog-img" src={blogImg} alt="" />
+            </div>
+            <div className="col-md-8 text-start">
+              <h4>Why eye care!!</h4>
+              <p>
+                Your eyes are an important part of your health. Most people rely
+                on their eyes to see and make sense of the world around them.
+                But some eye diseases can lead to vision loss, so it is
+                important to identify and treat eye diseases as early as
+                possible. You should get your eyes checked as often as your
+                health care provider recommends it, or if you have any new
+                vision problems. And just as it is important to keep your body
+                healthy, you also need to keep your eyes healthy.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="container text-start bg-white p-5 mt-5">
           <h5>Eye Care Tips</h5>
           <p>
             There are things you can do to help keep your eyes healthy and make

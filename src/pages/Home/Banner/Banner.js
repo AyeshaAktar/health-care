@@ -41,9 +41,6 @@ const Banner = () => {
               <h2 className="text-warning">
                 We Only Give Best Care To Your Eyes
               </h2>
-              <p>
-                Some representative placeholder content for the first slide.
-              </p>
             </div>
           </div>
           <div className="carousel-item">
@@ -52,9 +49,6 @@ const Banner = () => {
               <h2 className="text-warning">
                 Eye Care Specialist Services That You Can Trust
               </h2>
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
             </div>
           </div>
           <div className="carousel-item">
@@ -63,9 +57,6 @@ const Banner = () => {
               <h2 className="text-warning">
                 Optometrist and Eye Care Services
               </h2>
-              <p>
-                Some representative placeholder content for the third slide.
-              </p>
             </div>
           </div>
         </div>

@@ -44,7 +44,7 @@ const Header = () => {
             <Link className="nav-link active text-white" to="/home">
               Home
             </Link>
-            <Link className="nav-link text-white" to="#service">
+            <Link className="nav-link text-white" to="/home#service">
               Service
             </Link>
             <Link className="nav-link text-white" to="/about">
@@ -52,9 +52,6 @@ const Header = () => {
             </Link>
             <Link className="nav-link text-white" to="/blog">
               Blog
-            </Link>
-            <Link className="nav-link text-white" to="/home#contact">
-              Contact
             </Link>
             {loginUser?.email ? (
               <Link
