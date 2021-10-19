@@ -3,6 +3,7 @@ import "./Header.css";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../../context/AuthProvider";
 import { getAuth, signOut } from "firebase/auth";
+import { FiEye } from "react-icons/fi";
 
 const Header = () => {
   const [loginUser, setLoginUser] = useContext(AuthContext);
@@ -22,7 +23,7 @@ const Header = () => {
     <nav className="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
       <div className="container-fluid">
         <Link className="navbar-brand text-white" to="/">
-          Navbar
+          <FiEye /> Optic Eye-Care
         </Link>
         <button
           className="navbar-toggler"
@@ -62,7 +63,7 @@ const Header = () => {
                 to="#"
               >
                 {" "}
-                {loginUser?.displayName} Log out
+                {loginUser?.displayName} LogOut
               </Link>
             ) : (
               <Link className="nav-link text-white" to="/login">

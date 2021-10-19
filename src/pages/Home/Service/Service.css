@@ -1,3 +1,10 @@
 .service-img {
   height: 300px;
 }
+.course-card {
+  transition: 700ms ease;
+  cursor: pointer;
+}
+.course-card:hover {
+  transform: scale(1.02);
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import { GoLocation } from "react-icons/go";
-import { AiOutlineContacts, AiOutlineClockCircle } from "react-icons/ai";
+import { AiOutlineContacts } from "react-icons/ai";
+import { IoIosCall } from "react-icons/io";
 
 const Contact = () => {
   return (
@@ -13,7 +14,7 @@ const Contact = () => {
             <GoLocation />
             <div>
               <p>110E 16th St</p>
-              <p>New York, NY</p>
+              <p>Dhaka, BD</p>
             </div>
           </div>
         </div>
@@ -29,11 +30,10 @@ const Contact = () => {
         </div>
         <div className="col-md-4">
           <div>
-            <h4>Open hour</h4>
-            <AiOutlineClockCircle />
+            <h4>Emergency</h4>
+            <IoIosCall />
             <div>
-              <p>Monday - Friday: 12pm - 8pm</p>
-              <p>Saturday: 10am - 2pm</p>
+              <p>19971234567</p>
             </div>
           </div>
         </div>

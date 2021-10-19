@@ -15,7 +15,7 @@ const ServiceDetails = () => {
   console.log(singleData);
 
   return (
-    <div>
+    <div className="container">
       <h1>Service Details</h1>
       <img src={singleData?.img} alt="" />
       <h2>name:{singleData?.name}</h2>

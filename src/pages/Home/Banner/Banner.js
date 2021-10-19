@@ -1,8 +1,8 @@
 import React from "react";
 import "./Banner.css";
-import banner1 from "../../../../src/image/1.png";
-import banner2 from "../../../../src/image/2.jpg";
-import banner3 from "../../../../src/image/3.jpg";
+import banner1 from "../../../../src/image/banner/1.png";
+import banner2 from "../../../../src/image/banner/2.jpg";
+import banner3 from "../../../../src/image/banner/3.jpg";
 
 const Banner = () => {
   return (
@@ -38,7 +38,9 @@ const Banner = () => {
           <div className="carousel-item active">
             <img src={banner1} class="d-block w-100 banner-img" alt="..." />
             <div className="carousel-caption d-none d-md-block">
-              <h2>We Only Give Best Care To Your Eyes</h2>
+              <h2 className="text-warning">
+                We Only Give Best Care To Your Eyes
+              </h2>
               <p>
                 Some representative placeholder content for the first slide.
               </p>
@@ -47,7 +49,9 @@ const Banner = () => {
           <div className="carousel-item">
             <img src={banner2} class="d-block w-100 banner-img" alt="..." />
             <div className="carousel-caption d-none d-md-block">
-              <h2>Eye Care Specialist Services That You Can Trust</h2>
+              <h2 className="text-warning">
+                Eye Care Specialist Services That You Can Trust
+              </h2>
               <p>
                 Some representative placeholder content for the second slide.
               </p>
@@ -56,7 +60,9 @@ const Banner = () => {
           <div className="carousel-item">
             <img src={banner3} class="d-block w-100 banner-img" alt="..." />
             <div className="carousel-caption d-none d-md-block">
-              <h2>Optometrist and Eye Care Services</h2>
+              <h2 className="text-warning">
+                Optometrist and Eye Care Services
+              </h2>
               <p>
                 Some representative placeholder content for the third slide.
               </p>
